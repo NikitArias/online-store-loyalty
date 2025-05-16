@@ -1,0 +1,160 @@
+.admin-products-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.admin-h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-form select {
+    width: calc(54% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-form button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.admin-form button:hover {
+    background: #45a049;
+}
+
+.admin-products-table {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin-th,
+.admin-products-td {
+    padding: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.admin-th {
+    background: #007bff;
+    color: white;
+}
+
+.admin-products-td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 2px;
+}
+
+.admin-products-td button:first-child {
+    background: #edb202f3;
+    color: white
+}
+
+.admin-products-td button:first-child:hover {
+    background: #bc8d02;
+}
+
+.admin-products-td button:last-child {
+    background: #dc3545;
+    color: white;
+}
+
+.admin-products-td button:last-child:hover {
+    background: #c82333;
+}
+
+.admin-p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.admin-toggle-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin: 0 auto 15px;
+    width: auto;
+    text-align: center;
+}
+
+.admin-toggle-button.add {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.admin-toggle-button.add:hover {
+    background-color: #45a049;
+}
+
+.admin-toggle-button.add:active {
+    background-color: #3e8e41;
+}
+
+.admin-toggle-button.close {
+    background-color: #6c757d;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.admin-toggle-button.close:hover {
+    background-color: #545b62;
+}
+
+.admin-toggle-button.close:active {
+    background-color: #6c757d;
+}

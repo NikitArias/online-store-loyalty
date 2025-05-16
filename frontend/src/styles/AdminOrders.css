@@ -1,0 +1,120 @@
+.admin-orders-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.admin-h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.admin-select {
+    display: block;
+    width: 200px;
+    margin: 0 auto 20px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+
+.admin-p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.admin-orders-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin-th,
+.admin-td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.admin-th {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.admin-td select {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.admin-td button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.admin-td button.delete {
+    background: #d9534f;
+    color: white;
+}
+
+.admin-td button.delete:hover {
+    background: #c9302c;
+}
+
+.admin-td button.edit {
+    background: #edb202f3;
+    color: white;
+}
+
+.admin-td button.edit:hover {
+    background: #bc8d02;
+}
+
+.admin-td button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.admin-toggle-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 15px;
+}
+
+.admin-toggle-button.add {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.admin-toggle-button.add:hover {
+    background-color: #45a049;
+}
+
+.admin-orders-errors-container {
+    display: flex;
+    justify-content: center;
+}

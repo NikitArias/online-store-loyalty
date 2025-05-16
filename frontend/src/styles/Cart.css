@@ -1,0 +1,139 @@
+.cart-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.cart-actions button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.cart-actions button:hover {
+    background: #0056b3;
+}
+
+.cart-actions input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cancel-order {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.cancel-order:hover {
+    background: #c82333;
+}
+
+.place-order {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.place-order:hover {
+    background: #218838;
+}
+
+.total-amount {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.new-price {
+    font-weight: bold;
+}
+
+.price-change {
+    color: green;
+    font-size: 0.9em;
+}
+
+.old-total {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.new-total {
+    margin-left: 8px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.discount-info {
+    font-size: 14px;
+    color: #007bff;
+    margin-top: 4px;
+}

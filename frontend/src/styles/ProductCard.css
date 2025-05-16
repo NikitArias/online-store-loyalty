@@ -1,0 +1,122 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.view-reviews {
+    width: 100%;
+    background: #ff9800;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.view-reviews:hover {
+    background: #e68900;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    flex-grow: 1;
+}
+
+.product-card button {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.in-cart {
+    background: green !important;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-controls button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.cart-controls button:hover {
+    background: #0056b3;
+}
+
+.cart-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-card button.out-of-stock {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.product-card button.add-to-cart {
+    background: #007bff;
+}
+
+.product-card button.add-to-cart:hover {
+    background: #0056b3;
+}
+
+.product-card p.error {
+    color: black;
+    font-size: 14px;
+    margin-top: 5px;
+}

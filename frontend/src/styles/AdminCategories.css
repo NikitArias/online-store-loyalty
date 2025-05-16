@@ -1,0 +1,94 @@
+.admin-categories {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.category-form button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-form button:hover {
+    background-color: #45a049;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.category-item:hover {
+    background: #f0f0f0;
+}
+
+.category-item input {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.category-item button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-item button:not(.cancel) {
+    background-color: #edb202f3;
+    color: white;
+}
+
+.category-item button:not(.cancel):hover {
+    background-color: #bc8d02;
+}
+
+.cancel {
+    background-color: #dc3545 !important;
+    color: white;
+}
+
+.cancel:hover {
+    background-color: #c82333 !important;
+}

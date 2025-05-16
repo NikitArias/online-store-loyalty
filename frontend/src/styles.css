@@ -1,0 +1,129 @@
+.notification {
+    position: fixed;
+    left: 50%;
+    top: 12.8%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+    animation: fade-out 5s forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.error {
+    background-color: pink;
+    color: black;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 2px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.close-error {
+    font-size: 0.6em;
+    vertical-align: super;
+    line-height: 1;
+    color: black;
+    right: 2px;
+    margin: 1px;
+    top: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+} 
+
+.common-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.common-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.common-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.common-modal-buttons button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.common-modal-confirm {
+    background: #d9534f;
+    color: white;
+}
+
+.common-modal-cancel {
+    background: #6c757d;
+    color: white;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.offline-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}

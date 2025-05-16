@@ -1,0 +1,249 @@
+.orders-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.orders-list {
+    list-style: none;
+    padding: 0;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.view-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.cancel-order-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-order-button {
+    background-color: #95a5a6;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.order-items {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 14px;
+}
+
+.order-item-details {
+    margin: 5px 0;
+    color: #555;
+}
+
+.details-button {
+    background-color: #f1c40f;
+    color: white;
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.status-processing {
+    color: #d4a017;
+    font-weight: bold;
+}
+
+.status-sent {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.status-delivered {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-cancelled {
+    color: #dc3545;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.review-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content label {
+    font-weight: bold;
+}
+
+.modal-content textarea {
+    height: 100px;
+    resize: none;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.add-review-button {
+    background: #ff9800;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-review-button:hover {
+    background: #e68900;
+}
+
+.delete-review-button {
+    background: #e74c3c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.delete-review-button:hover {
+    background: #c0392b;
+}
+
+.review-section {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-modal .modal-content {
+    max-width: 500px;
+    padding: 25px;
+}
+
+.modal-content h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.modal-content select,
+.modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.modal-content textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.modal-buttons button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.modal-buttons button:first-child {
+    background: #28a745;
+    color: white;
+}
+
+.modal-buttons button:first-child:hover {
+    background: #218838;
+}
+
+.modal-buttons button:last-child {
+    background: #6c757d;
+    color: white;
+}
+
+.modal-buttons button:last-child:hover {
+    background: #5a6268;
+}
+
+.order-old-total {
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.order-discount-info {
+    color: #27ae60;
+    font-weight: 500;
+    font-size: 13px;
+}
